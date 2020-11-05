@@ -1,0 +1,162 @@
+.form-element {
+    padding: 0 0 1rem 0;
+    display: block;
+    width: 100%;
+
+    &--top {
+        margin-top: 2rem;
+    }
+
+    &--title {
+        margin-bottom: 1rem;
+
+        .form-element__label {
+            font-size: 1.05rem;
+        }
+    }
+
+    &--read-only {
+        border-bottom: 1px solid #f4f6f9;
+    }
+
+    &__label {
+        font-size: .75rem;
+        color: #3e3e3c;
+        color: rgb(84, 105, 141);
+        margin: 10px 0;
+
+        span {
+            display: block;
+            color: $red;
+            font-weight: 700;
+            font-size: .65rem;
+            margin: .5rem 0;
+        }
+    }
+
+    &__control {
+        margin-top: .75rem;
+        width: 100%;
+        display: inline-block;
+
+        &--flex {
+            display: flex;
+        }
+
+        &__target {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 32%;
+            height: 100px;
+            border-radius: 3px;
+            position: relative;
+            background-color: #F2F5F8;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            &__text {
+                position: absolute;
+                top: 20px;
+                left: 35px;
+                font-size: .75rem;
+                color: rgb(84, 105, 141);
+            }
+        }
+        &__assign {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 49%;
+            height: 100px;
+            border-radius: 3px;
+            position: relative;
+            background-color: #F2F5F8;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+            &__text {
+                display: block;
+                font-size: .75rem;
+                color: rgb(84, 105, 141);
+                margin-bottom: .5rem;
+            }
+        }
+
+        input.form-element__datepicker {
+            background: none;
+            background-image: url('/images/icons/appointment-24px.svg');
+            background-position: 12px center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+
+            padding-left: 48px;
+        }
+
+        &--with-indicator {
+            font-size: .75rem;
+
+            i {
+                font-size: .5rem;
+            }
+        }
+
+        input.form-element__input, select.form-element__select {
+
+            &--half-width {
+                width: 50%;
+                float: left;
+
+                &:first-of-type {
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+    }
+
+    &__select {
+
+        &:invalid {
+            color: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+
+
+    &__checkboxes {
+        display: inline-block;
+        width: 100%;
+
+        .form-element__checkbox {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    &__checkbox {
+        input[type=checkbox] {
+            display: inline-block;
+            appearance: checkbox;
+            -webkit-appearance: checkbox;
+            width: auto;
+        }
+    }
+
+    &__static {
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+}
+
+#formElementCheckbox {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-element__checkbox {
+        display: flex;
+        flex: 0 0 50%;
+        max-width: 50%;
+        align-items: center;
+    }
+}

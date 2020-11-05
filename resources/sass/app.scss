@@ -1,0 +1,58 @@
+@import './plugins/reset';
+@import './plugins/variables';
+
+html,
+body {
+    font-family: $source;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+small {
+    font-size: 1rem;
+
+    &.extra-small {
+        font-size: .75rem;
+    }
+}
+
+.wrapper {
+    width: 92%;
+    max-width: $wrapper;
+    margin: auto;
+}
+
+.page {
+
+    &-content {
+        padding: 2rem 0;
+        width: 92%;
+        max-width: $wrapper;
+        margin: auto;
+    }
+}
+
+@import 'components/auth';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/page-header';
+@import 'components/forbidden';
+@import 'components/list';
+@import 'components/grid';
+@import 'components/button';
+@import 'components/pagination';
+@import 'components/dot';
+@import 'components/icon';
+@import 'components/form';
+@import 'components/form-element';
+@import 'components/chat';
+@import 'components/modal';
+@import 'components/info';
+@import 'components/tab';
+@import 'components/dashboard';
+@import 'components/graph';
+@import 'components/card';

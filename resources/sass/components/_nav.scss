@@ -1,0 +1,40 @@
+.nav {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    background: $blue;
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    ul {
+
+        li {
+            display: inline-block;
+            color: $white;
+
+            i {
+                margin-right: .5rem;
+            }
+
+            a {
+                display: block;
+                padding: .5rem 1.25rem;
+                color: $white;
+                text-decoration: none;
+                border-radius: .25rem;
+                font-size: .85rem;
+
+                &:hover {
+                    background: darken($blue, 2.5%);
+                }
+
+                &.active {
+                    background: darken($blue, 5%);
+                }
+            }
+        }
+    }
+}
